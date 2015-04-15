@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /*  UIScreen *screen = [UIScreen mainScreen];
+        CGRect viewsRect = [screen bounds]; */
+    CGRect viewRect = [[UIScreen mainScreen]bounds];
+    
+    // create a UIWindow via code and Allocate MEmory for it.
+    self.window = [[UIWindow alloc]initWithFrame:viewRect];
+    
+    // Create a view controller
+        // UIViewController *colourTouchVC = [[UIViewController alloc]init];
+    self.viewController = [[ViewController alloc]init];
+    
+    // Create a View
+    // UIView *colourView = [[UIView alloc]initWithFrame:viewRect];
+    // colourView.backgroundColor = [UIColor orangeColor];
+    
+    // self.viewController.view = colourView;
+    // Assign the root ViewController to our ViewController
+    self.window.rootViewController = self.viewController;
+    
+    // receive all keyboard & touch event
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -32,8 +32,8 @@
 		E46974BF1ADEA9EB00923DC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E46974C11ADEA9EB00923DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E46974C21ADEA9EB00923DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E46974C41ADEA9EB00923DC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E46974C51ADEA9EB00923DC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E46974C41ADEA9EB00923DC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ProgramableViews/ViewController.h; sourceTree = "<group>"; };
+		E46974C51ADEA9EB00923DC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ProgramableViews/ViewController.m; sourceTree = "<group>"; };
 		E46974C81ADEA9EB00923DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E46974CA1ADEA9EB00923DC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E46974CD1ADEA9EB00923DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -63,6 +63,9 @@
 		E46974B11ADEA9EB00923DC9 = {
 			isa = PBXGroup;
 			children = (
+				E46974E31ADEB1B600923DC9 /* Model */,
+				E46974E41ADEB1BC00923DC9 /* View */,
+				E46974E51ADEB1C500923DC9 /* Controller */,
 				E46974BC1ADEA9EB00923DC9 /* ProgramableViews */,
 				E46974D61ADEA9EB00923DC9 /* ProgramableViewsTests */,
 				E46974BB1ADEA9EB00923DC9 /* Products */,
@@ -83,8 +86,6 @@
 			children = (
 				E46974C11ADEA9EB00923DC9 /* AppDelegate.h */,
 				E46974C21ADEA9EB00923DC9 /* AppDelegate.m */,
-				E46974C41ADEA9EB00923DC9 /* ViewController.h */,
-				E46974C51ADEA9EB00923DC9 /* ViewController.m */,
 				E46974C71ADEA9EB00923DC9 /* Main.storyboard */,
 				E46974CA1ADEA9EB00923DC9 /* Images.xcassets */,
 				E46974CC1ADEA9EB00923DC9 /* LaunchScreen.xib */,
@@ -117,6 +118,29 @@
 				E46974D81ADEA9EB00923DC9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E46974E31ADEB1B600923DC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E46974E41ADEB1BC00923DC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E46974E51ADEB1C500923DC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E46974C41ADEA9EB00923DC9 /* ViewController.h */,
+				E46974C51ADEA9EB00923DC9 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
