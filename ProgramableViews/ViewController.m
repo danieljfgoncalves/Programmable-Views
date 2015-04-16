@@ -32,10 +32,10 @@
     [self.view addSubview:buttonOne];
     
     // Add a UILabel and set its position
-    UILabel *label1 = [[UILabel alloc]initWithFrame:CGRectMake(50, 30, 200, 44)];
-    label1.text = @"Hello, from bitmaker labs.";
+    _labelOne = [[UILabel alloc]initWithFrame:CGRectMake(50, 30, 200, 44)];
+    _labelOne.text = @"Hello, from bitmaker labs.";
     // Add the label to the subview
-    [self.view addSubview:label1];
+    [self.view addSubview:_labelOne];
     
     // Connect the button to our button pressed
     [buttonOne addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -43,6 +43,9 @@
 }
 
 -(void)buttonPressed:(UIButton *)sender {
+    
+    _labelOne.text = @"it Changed!";
+    
     NSLog(@"Message from Button");
     
 }

@@ -12,5 +12,7 @@
 
 -(void)buttonPressed:(UIButton *)sender;
 
+@property (strong, nonatomic)UILabel *labelOne;
+
 @end
 
